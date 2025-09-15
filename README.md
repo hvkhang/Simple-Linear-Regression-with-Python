@@ -37,7 +37,7 @@ LR_Python/
 ## Installation
 Clone the repository and install the required libraries:
 ```bash
-git clone https://github.com/YOUR_USERNAME/linear-regression-python.git
+git clone https://github.com/YOUR_USERNAME/linear-regression-python.git](https://github.com/hvkhang/Simple-Linear-Regression-with-Python
 cd linear-regression-python
 pip install -r requirements.txt
 ```
