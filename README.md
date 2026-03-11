@@ -30,7 +30,6 @@ LR_Python/
 │── requirements.txt             # Required dependencies
 │── README.md                    # Project documentation
 |── Linear_Regression_Review.pdf # Report file reviewing the theoretical foundation for linear regression
-│── data/                        # (Optional) dataset folder
 ```
 
 ---
