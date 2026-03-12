@@ -109,18 +109,6 @@ Higher $R^2$ and lower MSE indicate better model performance.
 
 ---
 
-# Results Summary
-
-| Model | Mean R² | Mean MSE |
-|------|------|------|
-| Linear Regression | ... | ... |
-| Ridge Regression | ... | ... |
-| Random Forest | ... | ... |
-
-In many cases, **Random Forest performs best** because GPU hardware features often interact in nonlinear ways.
-
----
-
 ## Project Structure
 
 ```
@@ -142,3 +130,26 @@ gpu-regression-project/
 - Ensemble methods
 
 ---
+
+## Model Comparison Results
+
+The models were evaluated using **5-fold cross-validation** with the following metrics:
+
+- **$R^2$ Score** – measures how well the model explains the variance in the target variable (higher is better)
+- **Mean Squared Error (MSE)** – measures prediction error (lower is better)
+
+| Model | Mean $R^2$ | Std $R^2$ | Mean MSE | Std MSE |
+|------|------|------|------|------|
+| Random Forest | **0.9927** | 0.0014 | **0.0078** | 0.0020 |
+| Ridge Linear Regression | 0.9223 | 0.0038 | 0.0826 | 0.0051 |
+| Basic Linear Regression | 0.9223 | 0.0038 | 0.0826 | 0.0051 |
+
+### Key Observations
+
+- **Random Forest significantly outperforms the linear models**, achieving an $R^2$ score of **0.99**, indicating that it captures the relationships between GPU hardware features and the target variable extremely well.
+- **Linear Regression and Ridge Regression perform similarly**, suggesting that regularization has minimal impact for this feature set.
+- The strong performance of Random Forest indicates that **nonlinear relationships exist between GPU specifications and performance metrics**.
+
+### Conclusion
+
+Among the evaluated models, **Random Forest provides the best predictive performance**, demonstrating its ability to model complex interactions between GPU hardware features.
